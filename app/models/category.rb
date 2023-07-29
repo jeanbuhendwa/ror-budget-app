@@ -4,13 +4,11 @@ class Category < ApplicationRecord
 
   validates :name, :icon, presence: true
 
+  def total_amount
+    entities.sum(:amount)
+  end
+
   def self.total_amount(user)
-    total_amount = 0
-    @categories = Category.where(author_id: user) || []
-    @categories.each do |category|
-      amount = category.entities.sum(:amount)
-      total_amount += amount
-    end
-    total_amount
+    joins(:entities).where(author_id: user.id).sum('entities.amount')
   end
 end

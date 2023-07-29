@@ -21,16 +21,16 @@ RSpec.describe Category, type: :model do
 
   it 'should return 0 if there are no entities' do
     category = Category.create(name: 'Food', icon: 'food.jpng', author_id: user.id)
-    expect(category.total_amount).to eq(0) 
+    expect(category.total_amount).to eq(0)
   end
 
   it 'should return 0 if there are no entities using the class method' do
-    expect(Category.total_amount(user)).to eq(0) 
+    expect(Category.total_amount(user)).to eq(0)
   end
 
   it 'should return 0 if there are no entities' do
     category = Category.create(name: 'Food', icon: 'food.jpng', author_id: user.id)
-    expect(category.total_amount).to eq(0) 
+    expect(category.total_amount).to eq(0)
   end
 
   it 'should return 0 if there are no entities using the class method' do

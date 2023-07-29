@@ -122,7 +122,9 @@ cd 'project name'
 
 👤 **Jean-Jacques Buhendwa**
 
-- GitHub: [jeanbuhendwa](https://github.com/jeanbuhendwa)
+- GitHub: [@jeanbuhendwa](https://github.com/jeanbuhendwa)
+- Twitter: [@jeanbuhendwa](https://twitter.com/jeanjacqueI)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/johnbuhendwa/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

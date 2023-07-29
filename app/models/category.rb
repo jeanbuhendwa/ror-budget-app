@@ -9,6 +9,12 @@ class Category < ApplicationRecord
   end
 
   def self.total_amount(user)
-    joins(:entities).where(author_id: user.id).sum('entities.amount')
+    total_amount = 0
+    @categories = Category.where(author_id: user) || []
+    @categories.each do |category|
+      amount = category.entities.sum(:amount)
+      total_amount += amount
+    end
+    total_amount
   end
 end
